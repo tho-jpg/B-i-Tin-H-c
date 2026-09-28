@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sân Khấu Định Dạng Văn Bản</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #111, #1a1a2e, #16213e);
+            --neon-purple: #9b59b6;
+            --neon-red: #e74c3c;
+            --text-main: #e2e8f0;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 35px;
+            border-radius: 20px;
+            max-width: 700px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .flex-headings {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        /* Demo chuẩn kích thước các thẻ Heading */
+        h1 { color: #ff7675; margin: 5px 0; font-size: 2rem;}
+        h2 { color: #fd79a8; margin: 5px 0; font-size: 1.7rem;}
+        h3 { color: #fdcb6e; margin: 5px 0; font-size: 1.4rem;}
+        h4 { color: #00cec9; margin: 5px 0; font-size: 1.2rem;}
+        h5 { color: #0984e3; margin: 5px 0; font-size: 1rem;}
+        h6 { color: #6c5ce7; margin: 5px 0; font-size: 0.9rem;}
+        
+        p { line-height: 1.6; color: #b2bec3; }
+
+        .warning-box {
+            background: rgba(231, 76, 60, 0.1);
+            border: 1px solid var(--neon-red);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: #fab1a0;
+        }
+        .btn-back-first {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(90deg, #00ffcc, #00cec9);
+            color: #111;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+            box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color: var(--neon-purple); border-bottom: 2px solid var(--neon-purple); padding-bottom: 10px;">4. Thẻ Định Dạng Văn Bản & Hệ Thống Thứ Bậc</h2>
+        <p>Để text không bị tràn lan đại hải, chúng ta sử dụng hệ thống tiêu đề giảm cấp dần lực lượng từ <code>&lt;h1&gt;</code> tới <code>&lt;h6&gt;</code> và thẻ đoạn văn <code>&lt;p&gt;</code>:</p>
+        
+        <div class="flex-headings">
+            <h1>Thẻ h1: Vua một cõi (To nhất)</h1>
+            <h2>Thẻ h2: Phó vương quyền lực</h2>
+            <h3>Thẻ h3: Thừa tướng tầm trung</h3>
+            <h4>Thẻ h4: Đại phu thảo khấu</h4>
+            <h5>Thẻ h5: Hộ vệ tuần tra</h5>
+            <h6>Thẻ h6: Tiểu binh tí hon (Nhỏ nhất)</h6>
+        </div>
+
+        <p>Còn đây, chính là thẻ <code>&lt;p&gt;</code> giúp gom chữ thành một đoạn văn hoàn chỉnh, mượt mà tinh tế.</p>
+
+        <div class="warning-box">
+            🚨 <strong>CẢNH BÁO "VÔ TRI":</strong> HTML siêu bướng bỉnh! Nó không hề nhận biết ký tự xuống dòng khi bạn nhấn nút <strong>Enter</strong> trong file code đâu nhé. Bạn có Enter 100 lần thì khi lên web nó vẫn dí sát vào nhau trên một hàng dài. Muốn xuống dòng thực sự, hãy bọc riêng bằng thẻ <code>&lt;p&gt;</code> hoặc xài thẻ ngắt dòng nha!
+        </div>
+
+        <a href="index.html" class="btn-back-first">🔄 Quay Lại Từ Đầu Vũ Trụ</a>
+    </div>
+
+</body>
+</html>
